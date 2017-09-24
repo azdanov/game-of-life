@@ -1,8 +1,8 @@
 {
   "name": "game-of-life",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Game of Life",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "git@github.com:azdanov/game-of-life.git",
   "author": "Anton Zdanov <akumael@gmail.com>",
   "license": "Unlicense",
@@ -11,7 +11,7 @@
     "babel-register": "^6.26.0",
     "cross-env": "^5.0.5",
     "jest": "21.1.0",
-    "webpack": "^3.5.5"
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -20,14 +20,14 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "clean-webpack-plugin": "^0.1.16",
-    "eslint": "^4.3.0",
+    "eslint": "^4.7.2",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.5.0",
+    "eslint-config-prettier": "^2.6.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react": "^7.3.0",
     "prettier": "^1.7.0"
   },
   "scripts": {

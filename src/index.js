@@ -1,6 +1,23 @@
-const evens = [1, 2, 3, 4, 5];
+import GameOfLife from './GameOfLife';
 
-const odds = evens.map(v => v + 1);
-const nums = evens.map((v, i) => v + i);
+window.gol = {
+  game: null,
+  interval: null,
+  init(rows = 20, columns = 20) {
+    this.game = new GameOfLife(rows, columns);
+  },
+  start() {
+    this.interval = setInterval(() => {
+      this.game.generate();
+      this.game.display();
+    }, 1000 / 10);
+  },
 
-console.log(odds, nums);
+  stop() {
+    clearInterval(this.interval);
+  },
+
+  reset() {
+    this.game.init();
+  },
+};
